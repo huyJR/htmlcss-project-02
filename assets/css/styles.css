@@ -51,6 +51,7 @@ body {
 .heading.lv2 {
     font-size: 3.8rem;
     line-height: 1.26;
+    color: #171100;
 }
 a {
     text-decoration: none;
@@ -337,7 +338,7 @@ a {
 .popular .course-list {
     margin-top: 55px;
     display: flex;
-    gap: 30px;
+    gap: 0 30px;
 }
 
 .popular .course-item {
@@ -494,4 +495,74 @@ a {
     line-height: 1.53;
     width: 740px;
     color: #ffffff;
+}
+
+/* ===========Features========== */
+
+.features {
+    margin-top: 135px;
+    padding: 65px 0px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .images {
+    display: flex;
+    gap: 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .images .lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 41%;
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.features .content .features-btn {
+    margin-top: 32px;
+    min-width: 137px;
+}
+
+.features .content .features-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.features-2nd{
+    margin-top: 70px;
+}
+
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .images img{
+    width: 470px;
+    height: 440px;
 }
