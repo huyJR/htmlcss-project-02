@@ -40,7 +40,6 @@ body {
     font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: -0.02em;
-    text-align: left;
 }
 
 .heading.lv1 {
@@ -76,6 +75,7 @@ a {
 
 .main-content {
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -438,10 +438,6 @@ a {
     justify-content: space-between;
 }
 
-/* .feedback .feedback-item .info {
-    width: 159px;
-} */
-
 .feedback-item .info .avatar {
     width: 72px;
     height: 72px;
@@ -550,7 +546,7 @@ a {
     background: var(--primary-color);
 }
 
-.features-2nd{
+.features-2nd {
     margin-top: 70px;
 }
 
@@ -562,7 +558,217 @@ a {
     width: 49%;
 }
 
-.features-2nd .images img{
+.features-2nd .images img {
     width: 470px;
     height: 440px;
+}
+
+/* =============blog================= */
+
+.blog {
+    background: #fffcf4;
+    padding: 96px 0px;
+    margin-top: 135px;
+}
+
+.blog .blog-top {
+    text-align: center;
+}
+
+.blog .blog-top .desc {
+    margin: auto;
+    margin-top: 16px;
+    width: 448px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.blog .blog-list {
+    overflow: hidden;
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.blog .blog-list .item {
+    background: #fff;
+    width: calc(33.33% - 20px);
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.blog .blog-list .item:hover {
+    box-shadow: 0px 16px 32px 0px #0000000d;
+}
+
+.blog .blog-list .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .item .info {
+    width: 330px;
+    padding: 20px 20px 28px 20px;
+}
+
+.blog .item .date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-right: 8px;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #5f5b53;
+}
+
+.blog .item .date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.blog .item .date::after {
+    content: " ";
+    position: absolute;
+    right: -27px;
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+}
+
+.blog .item .title a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog .item .btn-blog {
+    margin-top: 12px;
+    font-size: 1.4rem;
+}
+
+.blog .item .btn-blog:hover {
+    background: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    margin-top: 38px;
+    gap: 6px;
+    justify-content: center;
+}
+
+.blog .dots .dot {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    cursor: default;
+    background: var(--primary-color);
+}
+
+/* ============Footer================ */
+
+.footer {
+    background: #2e2100;
+    padding: 96px 135px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .column {
+    width: 21%;
+}
+
+.footer .column:first-child {
+    width: 35%;
+}
+
+.footer .row .logo a {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+    color: #fff;
+}
+
+.footer .row .column .desc {
+    margin-top: 18px;
+    width: 267px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #bfbcb2;
+}
+
+.footer .row .column .socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .row .column .title {
+    padding: 0px 48px 14px 0px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.footer .column .list {
+    margin-top: 28px;
+}
+
+.footer .column .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #bfbcb2;
+}
+
+
+.footer .column li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .column .list a strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 28px 0px;
+
+}
+
+.footer .copyright p{
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #807d74;
 }
